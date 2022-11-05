@@ -114,22 +114,6 @@
           "options": {
             "browserTarget": "dev-app:build"
           }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/dev-app/src/test.ts",
-            "polyfills": "projects/dev-app/src/polyfills.ts",
-            "tsConfig": "projects/dev-app/tsconfig.spec.json",
-            "karmaConfig": "projects/dev-app/karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/dev-app/src/favicon.ico",
-              "projects/dev-app/src/assets"
-            ],
-            "styles": ["projects/dev-app/src/styles.scss"],
-            "scripts": []
-          }
         }
       }
     }
