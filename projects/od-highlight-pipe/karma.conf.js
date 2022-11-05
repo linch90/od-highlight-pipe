@@ -3,6 +3,10 @@
 
 // https://github.com/karma-runner/karma-chrome-launcher#headless-chromium-with-puppeteer
 process.env.CHROME_BIN = require("puppeteer").executablePath();
+const ci =
+  process.env.CI === true ||
+  process.env.CI === "True" ||
+  process.env.CI === "true";
 
 module.exports = function (config) {
   config.set({
@@ -36,7 +40,7 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
+    autoWatch: !ci,
     // https://github.com/Googlechrome/puppeteer/issues/290#issuecomment-322852784
     browsers: ["CustomChromeHeadless"],
     customLaunchers: {
@@ -45,7 +49,7 @@ module.exports = function (config) {
         flags: ["--no-sandbox", "--disable-setuid-sandbox"],
       },
     },
-    singleRun: false,
+    singleRun: ci,
     restartOnFileChange: true,
   });
 };
