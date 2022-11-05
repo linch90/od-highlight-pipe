@@ -5,7 +5,7 @@
   "homepage": "https://www.unihanlin.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/linch90/od-validators.git"
+    "url": "https://github.com/linch90/od-highlight-pipe.git"
   },
   "publishConfig": {
     "access": "public"
