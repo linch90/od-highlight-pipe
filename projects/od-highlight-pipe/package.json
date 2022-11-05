@@ -1,0 +1,25 @@
+{
+  "name": "@linch90/od-highlight-pipe",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://www.unihanlin.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linch90/od-validators.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "linch90;晗林科技",
+    "email": "chuzhilin@unihanlin.com"
+  },
+  "description": "highlight pipe for angular",
+  "peerDependencies": {
+    "@angular/common": "^14.2.0",
+    "@angular/core": "^14.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
