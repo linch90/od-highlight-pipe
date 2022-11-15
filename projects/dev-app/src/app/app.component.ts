@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { match, pinyin } from 'pinyin-pro';
+import { pinyin } from 'pinyin-pro';
 import { map, Observable, startWith } from 'rxjs';
 
 export interface StateGroup {
