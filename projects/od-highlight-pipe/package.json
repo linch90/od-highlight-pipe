@@ -1,6 +1,6 @@
 {
   "name": "@linch90/od-highlight-pipe",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "homepage": "https://www.unihanlin.com",
   "repository": {
@@ -24,11 +24,11 @@
     "library"
   ],
   "peerDependencies": {
-    "@angular/common": "^14.2.0",
-    "@angular/core": "^14.2.0"
+    "@angular/common": "^15.0.1",
+    "@angular/core": "^15.0.1"
   },
   "dependencies": {
     "tslib": "^2.3.0",
-    "pinyin-pro": "^3.11.0"
+    "pinyin-pro": "^3.13.1"
   }
 }
