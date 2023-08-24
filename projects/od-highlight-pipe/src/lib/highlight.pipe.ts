@@ -27,7 +27,7 @@ export class HighlightPipe implements PipeTransform {
 
     try {
       if (pinyinMode) {
-        const m = matchOverride(value, input);
+        const m = matchOverride(value, input, { precision: 'start' });
         if (m !== null) {
           const pinyinArr = pinyin(value, {
             nonZh: 'consecutive',

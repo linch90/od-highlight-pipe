@@ -1,3 +1,4 @@
+import { match } from 'pinyin-pro';
 import { HighlightPipe } from './highlight.pipe';
 
 describe('highlightPipe', () => {
